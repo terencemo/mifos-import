@@ -4,6 +4,8 @@ use warnings;
 use Config::General qw(ParseConfig);
 use base 'Test::WWW::Mechanize';
 
+our $VERSION = 1.0;
+
 sub new {
     my $class = shift;
     my %args = @_;
