@@ -11,12 +11,13 @@ following data can be imported:
 Usage Instructions
 ------------------
 
-Download the source scripts, and run the following commands:
+Download the source scripts, and run the following command:
 
     perl Makefile.PL
-    make 
 
-Create a file settings.conf with your mifos login configuration, like:
+This may require you to install the recent version of Test::WWW::Mechanize and
+Test::WWW::Selenium from CPAN if you don't already have them. Next, create a
+file settings.conf with your mifos login configuration, like:
 
     mifos_url   http://mifos-domain.com
     username    mifos
