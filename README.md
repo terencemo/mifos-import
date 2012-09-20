@@ -43,7 +43,7 @@ columns:
 
 Then run the following command:
 
-    perl create-offices.pl offices.csv
+    perl create-offices.pl officelevel(1-5) offices.csv
 
 Importing Centers
 -----------------
