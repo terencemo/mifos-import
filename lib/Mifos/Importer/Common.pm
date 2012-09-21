@@ -1,4 +1,4 @@
-package Mifos::Common;
+package Mifos::Importer::Common;
 use strict;
 use warnings;
 use Config::General qw(ParseConfig);
@@ -25,8 +25,8 @@ sub new {
 sub login {
     my $self = shift;
     
-    $self->title_like(qr'Mifos', 'Found mifos');
-    if ($self->content() =~ m/Welcome to Mifos/) {
+    $self->title_like(qr'Mifos::Importer', 'Found mifos');
+    if ($self->content() =~ m/Welcome to Mifos::Importer/) {
         $self->submit_form(
             with_fields      =>  $self->{auth}
         );

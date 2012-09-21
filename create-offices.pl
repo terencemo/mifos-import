@@ -21,7 +21,7 @@
 use strict;
 use warnings;
 use lib 'lib';
-use Mifos::Common;
+use Mifos::Importer::Common;
 use Text::CSV_XS;
 use Test::More  tests   => 3;
 
@@ -49,7 +49,7 @@ sub get_office_details {
 
 my ( $n, $csv_path ) = @ARGV;
 
-$mc = Mifos::Common->new( conf => 'settings.conf' );
+$mc = Mifos::Importer::Common->new( conf => 'settings.conf' );
 
 $mc->login();
 

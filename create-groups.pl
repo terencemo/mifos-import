@@ -23,13 +23,13 @@
 use strict;
 use warnings;
 use lib 'lib';
-use Mifos::Selenium;
+use Mifos::Importer::Selenium;
 use Text::CSV_XS;
 use Test::More  tests   => 3;
 
 my $sel;
 
-$sel = Mifos::Selenium->new( conf => 'settings.conf' );
+$sel = Mifos::Importer::Selenium->new( conf => 'settings.conf' );
 $sel->title_like(qr'Mifos', 'Found Mifos');
 $sel->login();
 $sel->wait_for_page_to_load(6000);

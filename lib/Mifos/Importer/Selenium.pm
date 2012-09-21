@@ -1,4 +1,4 @@
-package Mifos::Selenium;
+package Mifos::Importer::Selenium;
 use strict;
 use warnings;
 use Config::General qw(ParseConfig);
